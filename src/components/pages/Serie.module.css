@@ -1,0 +1,66 @@
+/* serie: about */
+#serieContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#heroContainer{
+    width: 100%;
+    background-image: linear-gradient(to top, #383838 0%, #1f1f1f 100%);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#hero{
+    display: flex;
+    max-width: 1400px;
+}
+
+.about{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aboutTitle h4{
+    color: rgb(153, 153, 153);
+}
+
+.divPoster{
+    margin-right: 1em;
+}
+
+#outrasInfos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.infos{
+    min-width: 300px;
+    margin-top: 1em;
+}
+
+/* Reviews */
+
+#reviewsContainer{
+    width: 98%;
+    max-width: 1400px;
+    margin-top: 1em;
+}
+
+.reviews{
+    padding: 1em;
+}
+
+/* Similares */
+
+#similarContainer{
+    width: 98%;
+    max-width: 1400px;
+    margin-top: 1em;
+}

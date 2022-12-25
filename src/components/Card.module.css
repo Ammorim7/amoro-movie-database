@@ -1,0 +1,17 @@
+.card{
+    width: 25vw;
+    max-width: 200px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.card h1{
+    font-size: 95%;
+}
+
+.card img{
+    border-radius: 1em;
+    width: 25vw;
+    max-width: 200px;
+}
