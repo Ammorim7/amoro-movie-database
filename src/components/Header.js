@@ -10,24 +10,24 @@ function Header(){
     return <header>
         <div className={styles.areaUtil}>
             <section className={styles.headerImg}>
-                <Link to='/'><img src={logo} alt='amoro movie database' height='50px'/></Link>
+                <Link to='/amoro-movie-database'><img src={logo} alt='amoro movie database' height='50px'/></Link>
             </section>
             <nav>
                 <ul>
                 <li>Filmes
                         <ul>
-                            <Link to='/movie'><li>Populares</li></Link>
-                            <Link to='/movie/toprated'><li>Mais bem avaliados</li></Link>
-                            <Link to='/movie/nowplaying'><li>Em cartaz</li></Link>
+                            <Link to='/amoro-movie-database/movie'><li>Populares</li></Link>
+                            <Link to='/amoro-movie-database/movie/toprated'><li>Mais bem avaliados</li></Link>
+                            <Link to='/amoro-movie-database/movie/nowplaying'><li>Em cartaz</li></Link>
                         </ul>
                     </li>
                     
                     
                     <li>Séries
                         <ul>
-                            <Link to='/serie'><li>Populares</li></Link>
-                            <Link to='/serie/toprated'><li>Mais bem avaliadas</li></Link>
-                            <Link to='/serie/nowplaying'><li>Na TV</li></Link>
+                            <Link to='/amoro-movie-database/serie'><li>Populares</li></Link>
+                            <Link to='/amoro-movie-database/serie/toprated'><li>Mais bem avaliadas</li></Link>
+                            <Link to='/amoro-movie-database/serie/nowplaying'><li>Na TV</li></Link>
                         </ul>
                     </li>
                 </ul>
