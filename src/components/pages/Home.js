@@ -39,7 +39,7 @@ function Home(){
         <section className={styles.grade}>
             <div>
                 <h1>Filmes em cartaz</h1>
-                <h4><Link to='/amoro-movie-database/movie/nowplaying' midia='movie'>Ver mais</Link></h4>
+                <h4><Link to='/movie/nowplaying' midia='movie'>Ver mais</Link></h4>
             </div>
             <div className={styles.gradeArea}>
                 {nowPlayingMovies.length > 0 ? (nowPlayingMovies.slice(0,10).map(movie => <Card object={movie} key={movie.id}/>)) : <p>Carregando...</p>}
@@ -49,7 +49,7 @@ function Home(){
         <section className={styles.grade}>
             <div>
                 <h1>Filmes populares</h1>
-                <h4><Link to='/amoro-movie-database/movie' midia='movie'>Ver mais</Link></h4>
+                <h4><Link to='/movie' midia='movie'>Ver mais</Link></h4>
             </div>
             <div className={styles.gradeArea}>
                 {popularMovies.length > 0 ? popularMovies.slice(0,10).map(movie => <Card object={movie} key={movie.id}/>) : <p>Carregando...</p>}
@@ -59,7 +59,7 @@ function Home(){
         <section className={styles.grade}>
             <div>
                 <h1>Séries populares</h1>
-                <h4><Link to='/amoro-movie-database/movie' midia='serie'>Ver mais</Link></h4>
+                <h4><Link to='/movie' midia='serie'>Ver mais</Link></h4>
             </div>
             <div className={styles.gradeArea}>
                 {popularTvShows.length > 0 ? popularTvShows.slice(0,10).map(serie => <Card object={serie} key={serie.id}/>) : <p>Carregando...</p>}
