@@ -31,6 +31,12 @@
 
 .divPoster{
     margin-right: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.divPoster img{
+    max-width: 50vw;
 }
 
 #outrasInfos{
@@ -41,7 +47,8 @@
 }
 
 .infos{
-    min-width: 300px;
+    width: 300px;
+    max-width: 40%;
     margin-top: 1em;
 }
 
@@ -63,4 +70,17 @@
     width: 98%;
     max-width: 1400px;
     margin-top: 1em;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 710px){
+    #hero{
+        flex-direction: column;
+    }
+
+    .divPoster{
+        justify-content: center;
+    }
 }
