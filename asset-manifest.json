@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/amoro-movie-database/static/css/main.79869c55.css",
+    "main.css": "/amoro-movie-database/static/css/main.0ef0d60f.css",
     "main.js": "/amoro-movie-database/static/js/main.7f3697df.js",
     "static/media/amdbSemFundo.png": "/amoro-movie-database/static/media/amdbSemFundo.45129d1dc7d067f23c98.png",
     "index.html": "/amoro-movie-database/index.html",
-    "main.79869c55.css.map": "/amoro-movie-database/static/css/main.79869c55.css.map",
+    "main.0ef0d60f.css.map": "/amoro-movie-database/static/css/main.0ef0d60f.css.map",
     "main.7f3697df.js.map": "/amoro-movie-database/static/js/main.7f3697df.js.map"
   },
   "entrypoints": [
-    "static/css/main.79869c55.css",
+    "static/css/main.0ef0d60f.css",
     "static/js/main.7f3697df.js"
   ]
 }
