@@ -1,4 +1,4 @@
-import styles from './Serie.module.css'
+import styles from './Movie.module.css'
 import stylesHome from './Home.module.css'
 
 import Card from '../Card'
