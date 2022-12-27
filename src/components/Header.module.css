@@ -46,3 +46,9 @@ ul li:hover ul {
     display: block;
     position: absolute;
 }
+
+@media screen and (max-width:425px){
+    .headerImg img{
+        height: 40px;
+    }
+}
