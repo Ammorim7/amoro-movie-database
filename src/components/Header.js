@@ -1,12 +1,25 @@
 import styles from './Header.module.css'
 import logo from './img/amdbSemFundo.png'
 
-import { Link } from 'react-router-dom'
+import {useState} from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
-// import {SlMagnifier} from 'react-icons/sl' - para utilizar quando implementar search
+import {SlMagnifier} from 'react-icons/sl' 
 
 
 function Header(){
+    const [search, setSearch] = useState("")
+    const navigate = useNavigate()
+
+    function buscar(e){
+        e.preventDefault()
+
+        if(!search) return
+
+        navigate(`/search?q=${search}`)
+        setSearch('')
+    }
+
     return <header>
         <div className={styles.areaUtil}>
             <section className={styles.headerImg}>
@@ -31,6 +44,10 @@ function Header(){
                         </ul>
                     </li>
                 </ul>
+                <form onSubmit={buscar}>
+                    <button type="submit"><SlMagnifier /></button>
+                    <input type="text" placeholder='Busque um filme/série' onChange={(e) => setSearch(e.target.value)} value={search}/>
+                </form>
             </nav>
         </div>
     </header>

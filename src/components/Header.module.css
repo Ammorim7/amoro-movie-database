@@ -11,6 +11,31 @@ header {
     position: absolute;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+} 
+
+form input{
+    padding: .5em;
+    margin-right: 0.2em;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form svg{
+    font-size: 1.2em;
+}
+
+
 .areaUtil{
     display: flex;
     align-items: center;
@@ -50,5 +75,29 @@ ul li:hover ul {
 @media screen and (max-width:425px){
     .headerImg img{
         height: 40px;
+    }
+
+    form input{
+        display: none;
+    }
+
+    form button:hover, form button:focus + input{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    form input:hover, form input:focus{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    form button{
+        background: transparent;
+    }
+
+    form svg{
+        color: white;
     }
 }

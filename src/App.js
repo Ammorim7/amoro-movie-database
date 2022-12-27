@@ -7,6 +7,7 @@ import Popular from './components/pages/Popular.js';
 import Serie from './components/pages/Serie.js';
 import TopRated from './components/pages/TopRated.js';
 import NowPlaying from './components/pages/NowPlaying';
+import Search from './components/pages/Search';
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/serie' element={<Popular midia='serie'/>}/>
         <Route path='/serie/toprated' element={<TopRated midia='serie'/>}/>
         <Route path='/serie/nowplaying' element={<NowPlaying midia='serie'/>}/>
+        <Route path='search' element={<Search />}/>
       </Routes>
     <Footer />
     </Router>
