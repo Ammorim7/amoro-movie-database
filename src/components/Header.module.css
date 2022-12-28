@@ -90,7 +90,7 @@ ul li:hover ul {
     form input:hover, form input:focus{
         display: block;
         position: absolute;
-        right: 0;
+        align-self: center;
     }
 
     form button{
