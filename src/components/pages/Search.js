@@ -28,7 +28,7 @@ function Search(){
     return <div id={styles.page}>
         <h1>Resultados para {query}:</h1>
         <section id={styles.grade}>
-            { resultados.map(midia => <Card object={midia} key={midia.id}/>) }
+            {resultados.length > 0 ? resultados.map(midia => midia.adult === false && <Card object={midia} key={midia.id}/>) : <h2>Carregando..</h2> }
         </section>
         <button onClick={() => setPage(page+1)}>Carregar mais</button>
     </div>
