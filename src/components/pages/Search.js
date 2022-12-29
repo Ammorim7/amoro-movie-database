@@ -18,7 +18,11 @@ function Search(){
 
     useEffect(() => {
         async function getContent(){
-            const r = await FetchContent(`${search}?${apiKey}&query=${query}`)
+            const r = await FetchContent(`${search}?${apiKey}&query=${query}&page=${page}`)
+            if(!r.results.length){
+                console.log("Não existem mais resultados.");
+                return;
+            }
             setResultados([...resultados, ...r.results])
         }
         getContent()
