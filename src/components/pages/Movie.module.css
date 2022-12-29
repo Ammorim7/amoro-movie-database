@@ -83,4 +83,8 @@
     .divPoster{
         justify-content: center;
     }
+
+    .aboutTitle{
+        margin-bottom: 2em;
+    }
 }
