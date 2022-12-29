@@ -32,7 +32,7 @@ function Home(){
 
     return <div id={styles.home}>
         <section id={styles.hero}>
-            <h1>Bem vindo(a) ao Amoro Movie Database</h1>
+            <h1>Bem vindo(a) ao Amoro Movie Database.</h1>
             <h2>Aqui você encontrará informações sobre diversos filmes e séries.</h2>
         </section>
 
