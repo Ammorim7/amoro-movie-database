@@ -58,7 +58,7 @@ function Movie(){
                     <div className={styles.aboutInfo}>
                         <div id={styles.sinopse}>
                             <h3>Sinopse:</h3>
-                            <p>{movie.overview}</p>
+                            {movie.overview ? <p>movie.overview</p> : <p>Este filme não possui uma sinopse cadastrada.</p>}
                         </div>
                         
                         <div id={styles.outrasInfos}>

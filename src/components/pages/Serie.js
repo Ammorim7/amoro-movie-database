@@ -57,7 +57,7 @@ function Serie(){
                     <div className={styles.aboutInfo}>
                         <div id={styles.sinopse}>
                             <h3>Sinopse:</h3>
-                            <p>{serie.overview}</p>
+                            {serie.overview ? <p>serie.overview</p> : <p>Esta série não possui uma sinopse cadastrada.</p>}
                         </div>
                         
                         <div id={styles.outrasInfos}>
