@@ -1,5 +1,5 @@
 /* Movie: about */
-#movieContainer{
+#movieContainer, #serieContainer{
     width: 100%;
     display: flex;
     align-items: center;
